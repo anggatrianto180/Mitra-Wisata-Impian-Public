@@ -28,7 +28,12 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f5f9ff;
+  --background-color: #f5f8fb;
+  --surface-color: #ffffff;
+}
+
+.service-background {
+  background: url("../img/opening2.jpg") top center;
   --surface-color: #ffffff;
 }
 
@@ -38,6 +43,10 @@
   --heading-color: #ffffff;
   --surface-color: #252525;
   --contrast-color: #ffffff;
+}
+
+.image-transparent {
+  opacity: 0.7;
 }
 
 /* Smooth scroll */
@@ -832,9 +841,10 @@ section,
   padding: 60px 0;
   display: flex;
   align-items: center;
-  background: url("../img/opening2.jpg") top center;
+  background: url("../img/opening3.jpg") top center;
   background-size: cover;
 }
+
 
 .hero:before {
   content: "";
@@ -852,12 +862,15 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 70px;
   font-weight: 700;
   line-height: 56px;
 }
 
 .hero h1 span {
+  color: var(--accent-color);
+}
+.hero h3 span {
   color: var(--accent-color);
 }
 
@@ -2051,3 +2064,102 @@ section,
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.text-wrapper {
+  background-color: rgba(255, 255, 255, 0.7); /* Warna putih dengan transparansi */
+  padding: 20px; /* Jarak di dalam background */
+  border-radius: 10px; /* Membuat sudut melengkung */
+  display: inline-block; /* Supaya ukuran mengikuti teks */
+}
+
+h1 {
+  color: #d4af37; /* Warna emas */
+  margin: 0;
+  font-size: 36px;
+}
+
+p {
+  color: #d4af37; /* Warna emas */
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+
+.container-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  background-color: #d4a73e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+  background-color: #4CAF50; /* Warna hijau */
+}
+
+/* Card Custom */
+
+    .card-custom {
+      background-color: #D4AF37; /* Warna emas */
+      color: white; /* Teks semua menjadi putih */
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .card-custom img {
+      border-bottom: 5px solid white;
+    }
+
+    .card-custom .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .card-custom .card-body {
+      text-align: center;
+    }
+
+    .whatsapp-button2 {
+      display: flex;
+      align-items: center;
+      background-color: #19ac36;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .whatsapp-button2 img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .whatsapp-button2 {
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  
