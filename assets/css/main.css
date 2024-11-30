@@ -1982,7 +1982,7 @@ section,
 .whatsapp-text {
   margin-left: 5px;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
@@ -2163,3 +2163,162 @@ p {
       text-align: center;
     }
   
+    /* 5 Fitur Bawah banner */
+
+    .custom-reset * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .custom-body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf5e6;
+  }
+
+  .custom-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .custom-services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #D4AF37;
+      padding: 20px;
+      border-radius: 10px;
+  }
+
+  .custom-service-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      width: calc(20% - 20px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-service-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .custom-service-card h3 {
+      background-color: #D4AF37;
+      color: white;
+      padding: 10px;
+      font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+      .custom-service-card {
+          width: calc(40% - 20px);
+      }
+  }
+
+  @media (max-width: 480px) {
+      .custom-service-card {
+          width: 100%;
+      }
+  }
+
+  /* Youtube*/
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 992px) { /* Target desktop screen sizes */
+  .responsive-map iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+/* Navbar */
+.header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  flex-wrap: nowrap; /* Mencegah elemen untuk membungkus ke baris berikutnya */
+}
+
+.logo-custom {
+  display: flex;
+  align-items: center;
+}
+
+.logo-custom img {
+  max-width: 70px; /* Ubah sesuai ukuran logo */
+  height: auto; /* Memastikan proporsi gambar tetap terjaga */
+  margin-right: 10px;
+}
+
+.contact-custom {
+  display: flex;
+  align-items: center;
+}
+
+/* Menjaga logo dan tombol promo dalam satu baris */
+.promo-button-custom {
+  color: white;
+}
+
+.social-media-custom a {
+  margin: 0 5px;
+  font-size: 24px; /* Ukuran ikon media sosial */
+  color: black; /* Ubah warna sesuai kebutuhan */
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .header-custom {
+      flex-direction: row; /* Pastikan tetap dalam satu baris */
+      justify-content: space-between; /* Menyebar elemen dalam baris */
+      align-items: center; /* Menyelaraskan elemen secara vertikal */
+  }
+
+  .logo-custom {
+      flex: 1; /* Mengatur logo agar mengambil ruang yang cukup */
+  }
+
+  .contact-custom {
+      flex: 1; /* Mengatur kontak agar mengambil ruang yang cukup */
+      justify-content: flex-end; /* Menyusun elemen ke kanan */
+  }
+
+  .promo-button-custom {
+      margin-left: 10px; /* Mengatur jarak antara tombol dan logo */
+  }
+
+  .social-media-custom a {
+    display: none; /* Menyembunyikan semua ikon media sosial */
+}
+}
+
+/* Text Telp*/
+.custom-text {
+  color: #ffc107; /* Warna emas */
+  font-size: calc(1rem + 1vw); /* Ukuran teks responsif */
+  margin-right: 20px;
+}
