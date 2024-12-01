@@ -233,4 +233,33 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function setupCarousel(carouselId) {
+  let carousel = document.querySelector(`#${carouselId}`);
+  if (!carousel) return; // Pastikan carousel ada
+
+  let items = carousel.querySelectorAll('.carousel-item');
+
+  items.forEach((el) => {
+      const minPerSlide = 3; // Jumlah item minimum per slide
+      let next = el.nextElementSibling;
+
+      for (let i = 1; i < minPerSlide; i++) {
+          if (!next) {
+              next = items[0]; // Wrap ke awal jika next tidak ada
+          }
+          let cloneChild = next.cloneNode(true);
+          el.appendChild(cloneChild.children[0]); // Tambahkan item ke slide
+          next = next.nextElementSibling;
+      }
+  });
+}
+
+// Atur carousel satu per satu
+setupCarousel('carousel1');
+setupCarousel('carousel2');
+
+
+
 })();
+
+

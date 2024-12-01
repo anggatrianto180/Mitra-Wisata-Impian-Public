@@ -2291,6 +2291,12 @@ p {
   color: black; /* Ubah warna sesuai kebutuhan */
 }
 
+.social-media-custom2 a {
+  margin: 0 5px;
+  font-size: 24px; /* Ukuran ikon media sosial */
+  color: black; /* Ubah warna sesuai kebutuhan */
+}
+
 /* Media query untuk tampilan mobile */
 @media (max-width: 768px) {
   .header-custom {
@@ -2315,6 +2321,7 @@ p {
   .social-media-custom a {
     display: none; /* Menyembunyikan semua ikon media sosial */
 }
+
 }
 
 /* Text Telp*/
@@ -2322,4 +2329,54 @@ p {
   color: #ffc107; /* Warna emas */
   font-size: calc(1rem + 0.5vw); /* Ukuran teks responsif */
   margin-right: 20px;
+}
+
+/*slideshow*/
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+/* Mengubah warna icon Previous dan Next menjadi emas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: gold; /* Warna emas */
+  border-radius: 50%; /* Membuatnya berbentuk bulat (opsional) */
+}
+
+/* Opsional: Menambahkan efek hover */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: darkgoldenrod; /* Warna emas yang lebih gelap saat dihover */
 }
