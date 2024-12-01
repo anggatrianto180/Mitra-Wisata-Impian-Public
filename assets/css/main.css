@@ -1165,11 +1165,11 @@ section,
 }
 
 .clients .swiper-slide img {
-  transition: 0.3s;
+  transition: 3s;
 }
 
 .clients .swiper-slide img:hover {
-  transform: scale(1.1);
+  transform: scale(2.2);
 }
 
 /*--------------------------------------------------------------
@@ -2065,6 +2065,7 @@ section,
   margin-right: 20px;
 }
 
+
 .text-wrapper {
   background-color: rgba(255, 255, 255, 0.7); /* Warna putih dengan transparansi */
   padding: 20px; /* Jarak di dalam background */
@@ -2319,6 +2320,6 @@ p {
 /* Text Telp*/
 .custom-text {
   color: #ffc107; /* Warna emas */
-  font-size: calc(1rem + 1vw); /* Ukuran teks responsif */
+  font-size: calc(1rem + 0.5vw); /* Ukuran teks responsif */
   margin-right: 20px;
 }
