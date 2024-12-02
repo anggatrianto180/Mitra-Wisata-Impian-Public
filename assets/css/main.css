@@ -2270,7 +2270,7 @@ p {
 }
 
 .logo-custom img {
-  max-width: 70px; /* Ubah sesuai ukuran logo */
+  max-width: 120px; /* Ubah sesuai ukuran logo */
   height: auto; /* Memastikan proporsi gambar tetap terjaga */
   margin-right: 10px;
 }
