@@ -209,7 +209,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Initialize the carousel
   var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
-      interval: 5000, // Change slide every 5 seconds
+      interval: 8000, // Change slide every 5 seconds
       wrap: true // Allow the carousel to cycle continuously
   });
 
