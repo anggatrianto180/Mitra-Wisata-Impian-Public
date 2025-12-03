@@ -214,22 +214,52 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Optional: Pause carousel on hover
-  document.getElementById('carouselExample').addEventListener('mouseenter', function() {
-      myCarousel.pause();
-  });
+  if(document.getElementById('carouselExample')){
+    document.getElementById('carouselExample').addEventListener('mouseenter', function() {
+        myCarousel.pause();
+    });
 
-  document.getElementById('carouselExample').addEventListener('mouseleave', function() {
-      myCarousel.cycle();
-  });
+    document.getElementById('carouselExample').addEventListener('mouseleave', function() {
+        myCarousel.cycle();
+    });
+  }
+
 
   // Optional: Add swipe support for touch devices
-  var carousel = document.getElementById('carouselExample');
-  var hammer = new Hammer(carousel);
-  hammer.on('swipeleft', function() {
-      myCarousel.next();
-  });
-  hammer.on('swiperight', function() {
-      myCarousel.prev();
+  if(document.getElementById('carouselExample')){
+    var carousel = document.getElementById('carouselExample');
+    var hammer = new Hammer(carousel);
+    hammer.on('swipeleft', function() {
+        myCarousel.next();
+    });
+    hammer.on('swiperight', function() {
+        myCarousel.prev();
+    });
+  }
+
+  // Initialize Swiper for carousel2
+  new Swiper('#carousel2', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+      el: '#carousel2 .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '#carousel2 .swiper-button-next',
+      prevEl: '#carousel2 .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
   });
 });
 
@@ -256,7 +286,6 @@ function setupCarousel(carouselId) {
 
 // Atur carousel satu per satu
 setupCarousel('carousel1');
-setupCarousel('carousel2');
 
 
 
